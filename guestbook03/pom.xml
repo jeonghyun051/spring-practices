@@ -51,9 +51,9 @@
 			<version>1.2</version>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
-		<finalName>emaillist03</finalName>
+		<finalName>guestbook03</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
