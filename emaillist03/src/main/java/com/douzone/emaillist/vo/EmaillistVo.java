@@ -1,6 +1,6 @@
 package com.douzone.emaillist.vo;
 
-public class EmaillistVo2 {
+public class EmaillistVo {
 
 	private Long no;
 	private String firstName;

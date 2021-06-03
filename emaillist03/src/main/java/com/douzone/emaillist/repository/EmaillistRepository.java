@@ -8,12 +8,15 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.douzone.emaillist.vo.EmaillistVo2;
+import org.springframework.stereotype.Repository;
+
+import com.douzone.emaillist.vo.EmaillistVo;
 
 
+@Repository
 public class EmaillistRepository {
 
-	public Boolean insert(EmaillistVo2 vo) {
+	public Boolean insert(EmaillistVo vo) {
 
 		Connection conn = null;
 		PreparedStatement pstmt = null;
@@ -60,9 +63,9 @@ public class EmaillistRepository {
 		return result;
 	}
 
-	public List<EmaillistVo2> findAll() {
+	public List<EmaillistVo> findAll() {
 
-		List<EmaillistVo2> result = new ArrayList<>();
+		List<EmaillistVo> result = new ArrayList<>();
 
 		Connection conn = null;
 		PreparedStatement pstmt = null;
@@ -85,7 +88,7 @@ public class EmaillistRepository {
 				String firstName = rs.getString(2);
 				String lastName = rs.getString(3);
 				String email = rs.getString(4);
-				EmaillistVo2 vo = new EmaillistVo2();
+				EmaillistVo vo = new EmaillistVo();
 				vo.setNo(no);
 				vo.setFirstName(firstName);
 				vo.setLastName(lastName);
