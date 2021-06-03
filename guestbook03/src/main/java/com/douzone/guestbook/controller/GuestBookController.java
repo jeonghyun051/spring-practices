@@ -41,7 +41,6 @@ public class GuestBookController {
 	
 	@RequestMapping(value = "/delete", method = RequestMethod.POST)
 	public String delete(int no, String password) {
-		
 		GuestBookVo vo = gusetBookRepository.findById(no);
 		if(vo.getPassword().equals(password)) {
 			gusetBookRepository.deleteById(no);
