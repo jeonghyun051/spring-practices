@@ -51,6 +51,5 @@ public class UserController {
 //		System.out.println(vo);
 //		return "redirect:/";
 //	}
-	
 
 }
