@@ -26,7 +26,7 @@ public class GuestBookController {
 		return "/WEB-INF/views/index.jsp";
 	}
 	
-	@RequestMapping("/add")
+	@RequestMapping(value = "/add", method = RequestMethod.POST)
 	public String add(GuestBookVo vo) {
 		gusetBookRepository.insert(vo);
 		
