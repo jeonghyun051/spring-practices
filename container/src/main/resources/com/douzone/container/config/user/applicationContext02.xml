@@ -16,7 +16,7 @@
 
 	<!-- 기본 생성자로 빈 생성 -->
 	<bean id="user" name="usr" class="com.douzone.container.user.User"/>	
-
+	
 	<!-- 파라미터 1개인 생성자로 빈 생성 -->
 	<bean id="user2" name="usr2" class="com.douzone.container.user.User">
 		<constructor-arg value="둘리"/>
@@ -33,17 +33,17 @@
 		<constructor-arg index="1" value="또치"/>
 		<constructor-arg index="0" value="4"/>
 	</bean>	
-
+	
 	<!-- setter 사용하기 -->
 	<bean id="user5" class="com.douzone.container.user.User">
 		<property name="no" value="5"/>
 		<property name="name" value="도우너"/>
 	</bean>	
-
+	
 	<bean id="friend" class="com.douzone.container.user.Friend">
 		<constructor-arg value="길동"/>
 	</bean>	
-
+	
 	<!-- User 빈을 생성하면서 Friend 빈을 DI하기 -->
 	<bean id="user6" class="com.douzone.container.user.User">
 		<property name="no" value="6"/>
@@ -51,7 +51,7 @@
 		<!-- DI -->
 		<property name="friend" ref="friend"/>
 	</bean>	
-
+	
 	<!-- setter를 사용한 List 세팅하기 -->
 	<bean id="user7" class="com.douzone.container.user.User">
 		<property name="no" value="7"/>
@@ -64,5 +64,4 @@
 			</list>
 		</property>
 	</bean>	
-
 </beans>
