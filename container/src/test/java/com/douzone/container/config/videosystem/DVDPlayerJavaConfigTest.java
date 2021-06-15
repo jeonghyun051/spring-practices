@@ -27,7 +27,6 @@ public class DVDPlayerJavaConfigTest {
 	@Autowired
 	private DigitalVideoDisc dvd;
 	
-	
 	//@Qualifier("dvdPlayer03") // 같은 타입의 빈이 2개이상 존재하는 경우 1.설정 클래스의 빈생성 메서드 이름
 	// 설정 클래스의 빈생성 메소드의 @Bean의 name 속성
 	@Qualifier("player04")
